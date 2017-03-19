@@ -26,7 +26,9 @@ db.collection("Users")
         console.log(result);
 })
 
-db.collection("Users").deleteMany({name: "Sergio Rueda-Montes"}).then((result) => {
+db.collection("Users")
+.deleteMany({name: "Sergio Rueda-Montes"})
+.then((result) => {
   console.log(result);
 })
 
